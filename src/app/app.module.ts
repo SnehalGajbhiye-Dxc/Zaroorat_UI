@@ -16,11 +16,14 @@ import { ProfessionalHistoryComponent } from './professional-history/professiona
 import { HeaderComponent } from './header/header.component';
 
 const appRoutes: Routes = [
-  {
-      path: '',
-      pathMatch: 'full',
-      component: DashboardComponent
-  } 
+  {path:'customer',component:CustomerComponent,
+children : [   ]},
+{path:'professional',component:ProfessionalComponent,
+children : [   ]},
+
+{path:'',component:ProfessionalComponent},
+{path:'login-customer',component:LoginCustomerComponent},
+{path:'login-vendor',component:LoginProfessionalComponent},
   // {
   //     path: 'dashboard',
   //     component: DashboardComponent
