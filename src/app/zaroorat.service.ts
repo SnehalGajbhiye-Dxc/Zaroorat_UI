@@ -13,7 +13,7 @@ export class ZarooratService {
   //   return this.http.get<Services[]>('/allServices')
   // }
   getServices() : Observable<Services[]> {
-    return this.http.get<Services[]>('http://zarooratdev-env.eba-j8sb4n2i.ap-south-1.elasticbeanstalk.com/allServices')
+    return this.http.get<Services[]>('/api/allServices')
   }
   // getServices() : Observable<Services[]> {
   //   return this.http.get('http://zarooratdev-env.eba-j8sb4n2i.ap-south-1.elasticbeanstalk.com/allServices')
@@ -21,7 +21,7 @@ export class ZarooratService {
   // }
 
   findByServiceName(serviceId : any) : Observable<Services> {
-    return this.http.get('http://zarooratdev-env.eba-j8sb4n2i.ap-south-1.elasticbeanstalk.com/services/'+serviceId)
+    return this.http.get('/api/services/'+serviceId)
     .map((res: Response) => {
      return res.json() as Services;
   })
