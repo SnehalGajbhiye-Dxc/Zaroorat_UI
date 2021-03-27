@@ -6,6 +6,7 @@ describe('LoginProfessionalComponent', () => {
   let component: LoginProfessionalComponent;
   let fixture: ComponentFixture<LoginProfessionalComponent>;
 
+  
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ LoginProfessionalComponent ]
@@ -23,3 +24,4 @@ describe('LoginProfessionalComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
