@@ -16,6 +16,7 @@ import { ProfessionalHistoryComponent } from './professional-history/professiona
 import { HeaderComponent } from './header/header.component';
 import { ZarooratService } from './zaroorat.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ServicesearchPipe } from './servicesearch.pipe';
 
 const appRoutes: Routes = [
   {path:'customer',component:CustomerComponent,
@@ -42,7 +43,8 @@ children : [   ]},
     LoginProfessionalComponent,
     CustomerHistoryComponent,
     ProfessionalHistoryComponent,
-    HeaderComponent
+    HeaderComponent,
+    ServicesearchPipe
   ],
   imports: [
     BrowserModule,
