@@ -21,7 +21,7 @@ children : [   ]},
 {path:'professional',component:ProfessionalComponent,
 children : [   ]},
 
-{path:'',component:ProfessionalComponent},
+{path:'',component:DashboardComponent},
 {path:'login-customer',component:LoginCustomerComponent},
 {path:'login-vendor',component:LoginProfessionalComponent},
   // {
