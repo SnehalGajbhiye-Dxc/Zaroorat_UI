@@ -14,6 +14,8 @@ import { LoginProfessionalComponent } from './login-professional/login-professio
 import { CustomerHistoryComponent } from './customer-history/customer-history.component';
 import { ProfessionalHistoryComponent } from './professional-history/professional-history.component';
 import { HeaderComponent } from './header/header.component';
+import { ZarooratService } from './zaroorat.service';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   {path:'customer',component:CustomerComponent,
@@ -46,9 +48,10 @@ children : [   ]},
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ZarooratService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
