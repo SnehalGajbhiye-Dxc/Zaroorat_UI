@@ -7,9 +7,10 @@
 	<h2><div class="page-intro"><b> Aapki sewa mein...</b></div></h2>
 	<input  type="text" class="form-control" name="search"  placeholder="Search for services.." [(ngModel)]="searchString"/>
 
+
 <main class="page-content">
 	
-	<div class="card" *ngFor="let service of services">
+	<div class="card" *ngFor="let service of services | servicesearch :  {serviceName : searchString}; let i = index">
 		<p class="profile-ratings">
 			<i class="fas fa-paint-roller col-yellow"></i></p>
 	  <div class="content">
@@ -20,6 +21,7 @@
 	  </div>
 	</div>
 	
+
 	<!-- <div class="card">
 	  <div class="content">
 		<h2 class="title">Plumber</h2>
